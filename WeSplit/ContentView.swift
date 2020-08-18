@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!").padding()
-    }
+	var body: some View {
+		NavigationView {
+			Form {
+				Section {
+					Text("Hello World")
+				}
+
+				Section {
+					Text("Hello World")
+					Text("Hello World")
+				}
+			}
+			.navigationBarTitle(Text("SwiftUI"), displayMode: .inline)
+		}
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+	static var previews: some View {
+		ContentView()
+	}
 }
